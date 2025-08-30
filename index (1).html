@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>RNS Institute of Technology, Bengaluru</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff8800;
+      --secondary: #112046;
+      --accent: #fff;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: var(--accent);
+      color: var(--secondary);
+    }
+    header {
+      background: var(--secondary);
+      color: var(--accent);
+      padding: 1.5rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin: 0.4rem 0 0;
+      color: var(--primary);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    nav {
+      background: var(--primary);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.7rem 0;
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.08rem;
+      letter-spacing: 1px;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--secondary);
+    }
+    .hero {
+      background: linear-gradient(90deg, var(--secondary) 60%, var(--primary) 100%);
+      color: var(--accent);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.1rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .section-title {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      border-left: 5px solid var(--secondary);
+      padding-left: 0.7rem;
+      letter-spacing: 1px;
+    }
+    .info-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .info-card {
+      flex: 1 1 320px;
+      background: #f7f8fa;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(17,32,70,0.07);
+      padding: 1.3rem 1rem;
+      border-top: 4px solid var(--primary);
+      min-width: 270px;
+    }
+    .info-card h3 {
+      margin-top: 0;
+      color: var(--secondary);
+    }
+    .info-card ul {
+      padding-left: 1.1rem;
+    }
+    .highlight {
+      color: var(--primary);
+      font-weight: bold;
+    }
+    .campus-img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 10px;
+      box-shadow: 0 4px 18px rgba(17,32,70,0.15);
+      margin: 1rem auto;
+      display: block;
+    }
+    footer {
+      background: var(--secondary);
+      color: var(--accent);
+      text-align: center;
+      padding: 1.2rem 0;
+      margin-top: 2rem;
+      font-size: 1rem;
+    }
+    @media (max-width: 900px) {
+      .info-grid {
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RNS Institute of Technology, Bengaluru</h1>
+    <p>An Autonomous Institute under VTU</p>
+    <p style="font-size: 0.95rem; margin-top:0.2rem;">
+      Dr. Vishnuvardhan Road, Channasandra, Bengaluru
+    </p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#departments">Departments</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Welcome to RNSIT</h2>
+    <p>
+      RNS Institute of Technology (RNSIT), Bengaluru, is one of the premier engineering institutions in Karnataka, renowned for its academic excellence, research, and innovation. Affiliated to Visvesvaraya Technological University (VTU) and recognized as an autonomous institute, RNSIT offers a vibrant campus life, accomplished faculty, and state-of-the-art infrastructure.
+    </p>
+  </section>
+
+  <div class="container">
+    <section id="about">
+      <div class="section-title">About RNSIT</div>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Vision</h3>
+          <p>To be a center of excellence in technical education and research, fostering professionals with ethical values and serving society.</p>
+        </div>
+        <div class="info-card">
+          <h3>Mission</h3>
+          <ul>
+            <li>Impart quality education through innovative teaching and learning.</li>
+            <li>Promote research and entrepreneurship.</li>
+            <li>Instill ethical values and social responsibility among students.</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3>Highlights</h3>
+          <ul>
+            <li><span class="highlight">Autonomous</span> under VTU</li>
+            <li>NBA Accredited Programs</li>
+            <li>Modern Campus &amp; Facilities</li>
+            <li>Active Industry Collaboration</li>
+          </ul>
+        </div>
+      </div>
+      <img class="campus-img" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=900&q=80" alt="RNSIT Campus">
+    </section>
+
+    <section id="departments">
+      <div class="section-title">Departments</div>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Undergraduate</h3>
+          <ul>
+            <li>Computer Science &amp; Engineering</li>
+            <li>Information Science &amp; Engineering</li>
+            <li>Electronics &amp; Communication Engineering</li>
+            <li>Electrical &amp; Electronics Engineering</li>
+            <li>Mechanical Engineering</li>
+            <li>Civil Engineering</li>
+            <li>Artificial Intelligence &amp; Machine Learning</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3>Postgraduate</h3>
+          <ul>
+            <li>M.Tech in CSE, VLSI, Structural Engineering</li>
+            <li>MBA &amp; MCA Programs</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3>Research Centers</h3>
+          <ul>
+            <li>Ph.D. Programs (VTU Recognized)</li>
+            <li>Innovation &amp; Incubation Center</li>
+            <li>Industry Collaboration Labs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="admissions">
+      <div class="section-title">Admissions</div>
+      <div class="info-card" style="max-width:700px;margin:auto;">
+        <h3>How to Apply</h3>
+        <ul>
+          <li>Admissions through CET, COMED-K, and Management quota.</li>
+          <li>Eligibility: Pass in 10+2 with Physics &amp; Mathematics as compulsory subjects.</li>
+          <li>For PG programs: Graduation in relevant field and entrance test.</li>
+          <li><b>Contact Admission Office:</b> +91-80-28611880/81/82</li>
+        </ul>
+        <a href="mailto:admissions@rnsit.ac.in" style="color:var(--primary);font-weight:bold;text-decoration:underline;">Email: admissions@rnsit.ac.in</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">Contact Us</div>
+      <div class="info-card" style="max-width:700px;margin:auto;">
+        <p>
+          <b>Address:</b><br>
+          RNS Institute of Technology<br>
+          Dr. Vishnuvardhan Road, Channasandra,<br>
+          RR Nagar Post, Bengaluru - 560098, Karnataka, India
+        </p>
+        <p>
+          <b>Phone:</b> +91-80-28611880/81/82<br>
+          <b>Email:</b> info@rnsit.ac.in
+        </p>
+        <p>
+          <b>Website:</b> <a href="https://www.rnsit.ac.in" style="color:var(--primary);font-weight:bold;">www.rnsit.ac.in</a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 RNS Institute of Technology, Bengaluru. Designed with <span style="color:var(--primary);font-weight:bold;">Orange</span>, <span style="color:var(--secondary);font-weight:bold;">Dark Blue</span> &amp; <span style="color:var(--accent);font-weight:bold;">White</span> theme.
+  </footer>
+</body>
+</html>
